@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1794108890940445624}
   - component: {fileID: 4539914083586074482}
   - component: {fileID: 2951065746077949598}
-  - component: {fileID: 6751718740639850141}
+  - component: {fileID: 309834251279027335}
   m_Layer: 0
-  m_Name: Beer
+  m_Name: beer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ CapsuleCollider:
   m_Height: 0.020771347
   m_Direction: 1
   m_Center: {x: 0, y: 2.2737368e-13, z: 0.019672137}
---- !u!114 &6751718740639850141
+--- !u!114 &309834251279027335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

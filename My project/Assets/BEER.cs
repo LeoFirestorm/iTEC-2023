@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Beer : MonoBehaviour
+public class beer : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-        PlayerInventory PlayerInventory = other.GetComponent<PlayerInventory>();
-        if (PlayerInventory != null)
+    
+        private void OnTriggerEnter(Collider other)
         {
-            PlayerInventory.BeerCollected();
-            gameObject.SetActive(false);
+            PlayerInventory PlayerInventory = other.GetComponent<PlayerInventory>();
+            if (PlayerInventory != null)
+            {
+                PlayerInventory.BeerCollected();
+                gameObject.SetActive(false);
+            }
         }
-    }
+    
 }
