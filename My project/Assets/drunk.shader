@@ -25,6 +25,7 @@ Shader "drunk"
 				vector <float,2> uv = vertex.xy/_ScreenParams.xy;
 				uv.x+=cos(uv.y*2.0+_Time.g)*0.05;
 				uv.y+=sin(uv.x*2.0+_Time.g)*0.05;
+				uv.y = 1.0-uv.y;
 				float offset = sin(_Time.g *0.5) * 0.01;    
 				float4 a = tex2D(_MainTex,uv);    
 				float4 b = tex2D(_MainTex,uv-float2(sin(offset),0.0));    
